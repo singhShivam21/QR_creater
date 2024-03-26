@@ -27,7 +27,7 @@ def qr():
                 return "Error occurred: " + str(e)
     return render_template("qr.html")
 
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/")
 def index():
     return render_template('index.html')
 
